@@ -16,4 +16,5 @@ public class ChklistItemMap {
     
     @Column(name = "chkitem_id", nullable = false)
     private Long chkitemId;
+    
 }

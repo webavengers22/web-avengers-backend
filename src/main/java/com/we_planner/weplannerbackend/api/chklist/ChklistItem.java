@@ -17,4 +17,5 @@ public class ChklistItem {
 
     @Column(name = "created_at")
     private LocalDateTime createdAt;
+    
 }
