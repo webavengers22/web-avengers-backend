@@ -1,0 +1,8 @@
+*.gradle
+*.properties
+*.lock
+*.bin
+*.json
+*.bat
+*.jar
+s
