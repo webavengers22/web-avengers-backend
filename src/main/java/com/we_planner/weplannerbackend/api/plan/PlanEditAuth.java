@@ -25,5 +25,4 @@ public class PlanEditAuth {
 
     @Column(name = "created_at")
     private LocalDateTime createdAt;
-
 }
