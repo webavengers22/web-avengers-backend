@@ -2,6 +2,9 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,java,visualstudiocode
 bin/
 
+demo/
+*.properties
+
 .gradle
 /build/
 !gradle/wrapper/gradle-wrapper.jar
