@@ -23,7 +23,7 @@ public class Plan {
     private String title;
 
     @Column(name = "place", nullable = false)
-    private PlaceType place;
+    private PlaceType[] place;
 
     @Column(name = "companion_type", nullable = false)
     private CompanionType companionType;
@@ -40,16 +40,19 @@ public class Plan {
     @Column(name = "thumbnail", length = 100, nullable = true)
     private String thumbnail;
 
-    @Column(name = "view_cnt", nullable = false, columnDefinition = "0" )
+    @ColumnDefault("0")
+    @Column(name = "view_cnt", nullable = false)
     private Long viewCnt;
 
     @Column(name = "is_private", nullable = false )
     private boolean isPrivate;
 
-    @Column(name = "created_at", nullable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
+    @ColumnDefault("CURRENT_TIMESTAMP")
+    @Column(name = "created_at", nullable = false)
     private LocalDateTime createdAt;
 
-    @Column(name = "updated_at", nullable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
+    @ColumnDefault("CURRENT_TIMESTAMP")
+    @Column(name = "updated_at", nullable = false)
     private LocalDateTime updatedAt;
 
     @Column(name = "deleted_at", nullable = true)

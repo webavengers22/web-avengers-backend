@@ -2,14 +2,7 @@ package com.we_planner.weplannerbackend.api.keep;
 
 import java.time.LocalDateTime;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-
+import javax.persistence.*;
 
 @Entity
 @Table(name="plan_keep")
@@ -28,6 +21,7 @@ public class Keep {
     @Column(name ="keeper_id", nullable = false)
     private Long keeperId;
 
-    @Column(name = "created_at", columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
+    @ColumnDefault("CURRENT_TIMESTAMP")
+    @Column(name = "created_at")
     private LocalDateTime createdAt;
 }
