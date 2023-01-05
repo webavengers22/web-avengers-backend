@@ -19,7 +19,7 @@ public class PlanChklistFlag {
     @Column(name = "chklist_id", nullable = false)
     private Long chklistId;
 
-    @Column(name = "isChk", nullable = false)
+    @Column(name = "is_chk", nullable = false)
     @ColumnDefault("false")
     private boolean isChk;
 

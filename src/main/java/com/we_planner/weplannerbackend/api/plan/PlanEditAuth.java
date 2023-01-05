@@ -20,7 +20,7 @@ public class PlanEditAuth {
     @Column(name = "user_id", nullable = false)
     private Long userId;
 
-    @Column(name = "isWriter", nullable = false)
+    @Column(name = "is_writer", nullable = false)
 	public AuthType isWriter;
 
     @Column(name = "created_at")
