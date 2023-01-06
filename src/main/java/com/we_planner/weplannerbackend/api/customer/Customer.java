@@ -2,7 +2,7 @@ package com.we_planner.weplannerbackend.api.customer;
 
 import java.time.LocalDateTime;
 
-import javax.persistence.*;
+
 
 @Entity
 @Table(name = "customer")
@@ -19,7 +19,8 @@ public class Customer {
     @Enumerated(EnumType.STRING)
     private CategoryType category;
 
-    @Column(name = "created_at", nullable = false, columnDefinition = "TIMESTAMP DEFAULT CURRENT_TIMESTAMP")
+    @ColumnDefault("CURRENT_TIMESTAMP")
+    @Column(name = "created_at", nullable = false)
     private LocalDateTime createdAt;
 
     @Column(name = "deleted_at", nullable = true)
