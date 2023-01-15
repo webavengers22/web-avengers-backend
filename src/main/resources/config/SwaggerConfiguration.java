@@ -30,7 +30,7 @@ public class SwaggerConfiguration {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder().title("Spring API Documentation")
                 .description("앱 개발시 사용되는 서버 API에 대한 연동 문서입니다.")
-                .license("we_planner").licenseUrl("https://blog.naver.com/gudrb963")
+                .license("we_planner")
                 .version("1")
                 .build();
     }

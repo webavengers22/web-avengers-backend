@@ -4,6 +4,8 @@ import java.time.LocalDateTime;
 
 import javax.persistence.*;
 
+import org.hibernate.annotations.ColumnDefault;
+
 @Entity
 @Table(name = "customer_notice")
 public class Notice {
