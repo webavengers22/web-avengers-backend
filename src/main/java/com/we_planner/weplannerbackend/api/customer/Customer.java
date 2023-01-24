@@ -2,6 +2,10 @@ package com.we_planner.weplannerbackend.api.customer;
 
 import java.time.LocalDateTime;
 
+import javax.persistence.*;
+
+import org.hibernate.annotations.ColumnDefault;
+
 
 
 @Entity

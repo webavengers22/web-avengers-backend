@@ -4,6 +4,8 @@ import java.time.LocalDateTime;
 
 import javax.persistence.*;
 
+import org.hibernate.annotations.ColumnDefault;
+
 import com.we_planner.weplannerbackend.api.plan.Enum.CompanionType;
 import com.we_planner.weplannerbackend.api.plan.Enum.PlaceType;
 import com.we_planner.weplannerbackend.api.plan.Enum.ThemeType;
