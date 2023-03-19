@@ -5,10 +5,16 @@ import javax.persistence.*;
 
 import org.hibernate.annotations.ColumnDefault;
 
+import lombok.Getter;
+import lombok.Setter;
+@Getter
+@Setter
+@NoArgsConstructor
 @Entity
 @Table(name = "user_pw")
 public class UserPw {
     //필드
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", unique = true, nullable = false)

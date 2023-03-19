@@ -4,6 +4,13 @@ import java.time.*;
 import javax.persistence.*;
 import org.hibernate.annotations.ColumnDefault;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@NoArgsConstructor
+@Setter
+@Getter
 @Entity
 @Table(name = "user")
 public class User {
@@ -34,6 +41,7 @@ public class User {
     private boolean isReceive;
 
     @Column(name = "created_at")
+    @ColumnDefault("CURRENT_TIMESTAMP")
     private LocalDateTime createdAt;
 
     @Column(name = "updated_at")

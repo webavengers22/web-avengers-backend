@@ -5,6 +5,13 @@ import javax.persistence.*;
 
 import org.hibernate.annotations.ColumnDefault;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@NoArgsConstructor
 @Entity
 @Table(name = "user_profile")
 public class UserProfile {
