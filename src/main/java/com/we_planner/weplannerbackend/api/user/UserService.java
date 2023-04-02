@@ -38,4 +38,14 @@ public class UserService {
         userProfileRepository.save(userProfile);
         return true;
     }
+
+    public UserResponseDto getUserById(long userId){
+        User user = userRepository.findByUserId(userId);
+        if(!user){
+            return null;
+        }
+        UserProfile userProfile = userProfileRepository.findByUserId(userId);
+        UserResponseDto userResponse  = new UserResponseDto(user.getId(), userProfile.getNickname(), user.getEmail(), userProfile.getProfileImage(), userProfile.getProfileIntroduce());
+        return userResponse;
+    }
 }
