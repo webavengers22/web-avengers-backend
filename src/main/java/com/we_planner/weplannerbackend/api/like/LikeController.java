@@ -8,7 +8,7 @@ public class LikeController {
     private final LikeService likeService;
 
     @PostMapping(value = 'add/like')
-    public Boolean signUp(@RequestBody(required = true) AddLikeRequestDto addLikeRequest){
+    public Boolean like(@RequestBody(required = true) AddLikeRequestDto addLikeRequest){
         return likeService.addLike(addLikeRequest);
     }
 }
